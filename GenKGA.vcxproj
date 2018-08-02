@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EFFAE567-194A-4F22-A227-77FBBF3A0FD4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="project1\include\um\mbedtls\aes.h" />
+    <ClInclude Include="project1\include\um\mbedtls\aesni.h" />
+    <ClInclude Include="project1\include\um\mbedtls\arc4.h" />
+    <ClInclude Include="project1\include\um\mbedtls\aria.h" />
+    <ClInclude Include="project1\include\um\mbedtls\asn1.h" />
+    <ClInclude Include="project1\include\um\mbedtls\asn1write.h" />
+    <ClInclude Include="project1\include\um\mbedtls\base64.h" />
+    <ClInclude Include="project1\include\um\mbedtls\bignum.h" />
+    <ClInclude Include="project1\include\um\mbedtls\blowfish.h" />
+    <ClInclude Include="project1\include\um\mbedtls\bn_mul.h" />
+    <ClInclude Include="project1\include\um\mbedtls\camellia.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ccm.h" />
+    <ClInclude Include="project1\include\um\mbedtls\certs.h" />
+    <ClInclude Include="project1\include\um\mbedtls\chacha20.h" />
+    <ClInclude Include="project1\include\um\mbedtls\chachapoly.h" />
+    <ClInclude Include="project1\include\um\mbedtls\check_config.h" />
+    <ClInclude Include="project1\include\um\mbedtls\cipher.h" />
+    <ClInclude Include="project1\include\um\mbedtls\cipher_internal.h" />
+    <ClInclude Include="project1\include\um\mbedtls\cmac.h" />
+    <ClInclude Include="project1\include\um\mbedtls\compat-1.3.h" />
+    <ClInclude Include="project1\include\um\mbedtls\config.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ctr_drbg.h" />
+    <ClInclude Include="project1\include\um\mbedtls\debug.h" />
+    <ClInclude Include="project1\include\um\mbedtls\des.h" />
+    <ClInclude Include="project1\include\um\mbedtls\dhm.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ecdh.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ecdsa.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ecjpake.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ecp.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ecp_internal.h" />
+    <ClInclude Include="project1\include\um\mbedtls\entropy.h" />
+    <ClInclude Include="project1\include\um\mbedtls\entropy_poll.h" />
+    <ClInclude Include="project1\include\um\mbedtls\error.h" />
+    <ClInclude Include="project1\include\um\mbedtls\gcm.h" />
+    <ClInclude Include="project1\include\um\mbedtls\havege.h" />
+    <ClInclude Include="project1\include\um\mbedtls\hkdf.h" />
+    <ClInclude Include="project1\include\um\mbedtls\hmac_drbg.h" />
+    <ClInclude Include="project1\include\um\mbedtls\md.h" />
+    <ClInclude Include="project1\include\um\mbedtls\md2.h" />
+    <ClInclude Include="project1\include\um\mbedtls\md4.h" />
+    <ClInclude Include="project1\include\um\mbedtls\md5.h" />
+    <ClInclude Include="project1\include\um\mbedtls\md_internal.h" />
+    <ClInclude Include="project1\include\um\mbedtls\memory_buffer_alloc.h" />
+    <ClInclude Include="project1\include\um\mbedtls\net.h" />
+    <ClInclude Include="project1\include\um\mbedtls\net_sockets.h" />
+    <ClInclude Include="project1\include\um\mbedtls\nist_kw.h" />
+    <ClInclude Include="project1\include\um\mbedtls\oid.h" />
+    <ClInclude Include="project1\include\um\mbedtls\padlock.h" />
+    <ClInclude Include="project1\include\um\mbedtls\pem.h" />
+    <ClInclude Include="project1\include\um\mbedtls\pk.h" />
+    <ClInclude Include="project1\include\um\mbedtls\pkcs11.h" />
+    <ClInclude Include="project1\include\um\mbedtls\pkcs12.h" />
+    <ClInclude Include="project1\include\um\mbedtls\pkcs5.h" />
+    <ClInclude Include="project1\include\um\mbedtls\pk_internal.h" />
+    <ClInclude Include="project1\include\um\mbedtls\platform.h" />
+    <ClInclude Include="project1\include\um\mbedtls\platform_time.h" />
+    <ClInclude Include="project1\include\um\mbedtls\platform_util.h" />
+    <ClInclude Include="project1\include\um\mbedtls\poly1305.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ripemd160.h" />
+    <ClInclude Include="project1\include\um\mbedtls\rsa.h" />
+    <ClInclude Include="project1\include\um\mbedtls\rsa_internal.h" />
+    <ClInclude Include="project1\include\um\mbedtls\sha1.h" />
+    <ClInclude Include="project1\include\um\mbedtls\sha256.h" />
+    <ClInclude Include="project1\include\um\mbedtls\sha512.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ssl.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ssl_cache.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ssl_ciphersuites.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ssl_cookie.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ssl_internal.h" />
+    <ClInclude Include="project1\include\um\mbedtls\ssl_ticket.h" />
+    <ClInclude Include="project1\include\um\mbedtls\threading.h" />
+    <ClInclude Include="project1\include\um\mbedtls\timing.h" />
+    <ClInclude Include="project1\include\um\mbedtls\version.h" />
+    <ClInclude Include="project1\include\um\mbedtls\x509.h" />
+    <ClInclude Include="project1\include\um\mbedtls\x509_crl.h" />
+    <ClInclude Include="project1\include\um\mbedtls\x509_crt.h" />
+    <ClInclude Include="project1\include\um\mbedtls\x509_csr.h" />
+    <ClInclude Include="project1\include\um\mbedtls\xtea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mbedtls\visualc\VS2010\mbedTLS.vcxproj">
+      <Project>{46cf2d25-6a36-4189-b59c-e4815388e554}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\Downloads\Documents\kRjwNipr.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\prett\source\repos\mbedtls\include\mbedtls;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
